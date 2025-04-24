@@ -11,7 +11,7 @@ async function getWord()
      console.log(word);
      firstReload();
     document.body.addEventListener('keypress',(e)=>{
-        if(word.includes(e.key))
+        if(word.includes(e.key.toLocaleLowerCase()))
         {
             let index = word.indexOf(e.key);
             console.log(index);
